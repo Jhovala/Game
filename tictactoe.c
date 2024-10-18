@@ -46,7 +46,7 @@ int main(){
 
     reset_board();
     
-    while(winner == ' ' && check_free_spaces() !=0){
+    while(winner == ' ' && check_free_spaces() != 0){
         print_board();
 
         player_move();
@@ -69,7 +69,7 @@ int main(){
 
     } while (response == 'Y');
     
-    printf("\nThanks for playing!!!\n");
+    printf("\nThanks for playing!!! visit Bro Code channel on YouTube\n");
 
     return 0;
 }
@@ -154,7 +154,7 @@ char check_winner(){
 }
 
 void print_winner(char winner){
-    if (winner == PLAYER){ printf("\nYou WIN!"); }
-    else if (winner == COMPUTER){ printf("\nYou LOSE!"); }
-    else { printf("\nDraw!"); }
+    if (winner == PLAYER){ printf("\nYou %sWIN%s!", GRN, WHT); }
+    else if (winner == COMPUTER){ printf("\nYou %sLOSE%s!", RED, WHT); }
+    else { printf("\n%sDraw%s!", BLU, WHT); }
 }
