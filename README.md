@@ -1,1 +1,1 @@
-# Game
+# Game tic tac toe in C
