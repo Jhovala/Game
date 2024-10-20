@@ -60,10 +60,11 @@ int main(){
 
     print_board();
     print_winner(winner);
+    getchar(); // add this to run in linux
 
     printf("\nPlay again? (%sY%s/%sN%s): ",GRN ,WHT ,RED ,WHT);
-    scanf("%c");
-    scanf("%c");
+    //scanf("%c"); // this no
+    //scanf("%c"); // run in linux
     scanf("%c", &response);
     response = toupper(response);
 
